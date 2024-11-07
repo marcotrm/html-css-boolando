@@ -1,0 +1,64 @@
+/* RESET */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* GENERAL */
+.container{
+    max-width: 1200px;
+}
+
+
+/*HEADER */
+
+header{
+    padding: 16px 0;
+    background-color: #FF6900;
+}
+
+header > .container{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+}
+
+.main-nav{
+    width: 33%;
+    line-height: 44px;
+    
+}
+
+.personal-area{
+    width: 33%;
+    color: white;
+    text-align: right;
+    line-height: 44px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    line-height: center;
+}
+
+.main-nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    max-width: 130px;
+}
+
+i{
+    padding: 0 5px;
+}
