@@ -9,21 +9,45 @@
 /* GENERAL */
 .container{
     max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.description{
+margin: 3px 0;
+}
 
+p{
+    color: grey;
+    font-size: 10px;
+}
+
+h4{
+    font-size: 18px;
+}
+
+.color{
+    color: red;
+    font-size: 14px;
+}
 /*HEADER */
 
 header{
     padding: 16px 0;
     background-color: #FF6900;
+    position: fixed;
+    width: 100%;
+    margin-top: -40px;
+    z-index: 2;
+
 }
 
 header > .container{
     display: flex;
     margin: 0 auto;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    
 }
 
 .logo{
@@ -55,10 +79,48 @@ header > .container{
     color: white;
 }
 
-img{
+.logo > img {
     max-width: 130px;
 }
 
 i{
     padding: 0 5px;
+}
+
+/* MAIN */
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.colmn{
+    width: calc(100% / 3);
+    display: relative;
+
+    
+}
+.row{
+    margin: 40px 0;
+    display: flex;
+    gap: 5px;
+}
+.last-img{
+    max-width: 397px;
+}
+
+.discount{
+    background-color: red;
+    position: absolute;
+    padding: 6px 15px;
+    color: white;
+    bottom: 170px;
+}
+
+.sost{
+    background-color: green;
+    position: absolute;
+    padding: 6px 15px;
+    color:white;
+    bottom: 170px;
+    left: 220px;
 }
