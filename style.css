@@ -113,10 +113,6 @@ main{
     display: none;
 }
 
-.last-img{
-    max-width: 375px;
-}
-
 .colmn:hover .img-two{
     display: inline;
 }
@@ -170,6 +166,12 @@ main{
     left: 0;
     bottom: 98px;
 }
+.line{
+    text-decoration: line-through;
+    color: black;
+    margin-left: 5px;
+
+}
 
 /* FOOTER */
 
@@ -193,7 +195,9 @@ footer>.container{
 
 .legal_info{
     font-size: small;
-    justify-content: space-between;
+    gap: 5%;
+    display: flex;
+    color: gray;
 }
 .social>div{
     font-size: small;
