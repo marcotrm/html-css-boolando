@@ -169,3 +169,36 @@ main{
     left: 0;
     bottom: 98px;
 }
+
+/* FOOTER */
+
+footer{
+    background-color: #1B1B1B;
+    color: white;
+    padding: 16px 0;
+}
+
+footer>.container{
+    justify-content: space-between;
+}
+
+.legal{
+    width: calc(70%/2);
+}
+
+.society{
+    padding-bottom: 8px;
+}
+
+.legal_info{
+    font-size: small;
+    justify-content: space-between;
+}
+.social>div{
+    font-size: small;
+    padding-bottom: 16px;
+}
+.icon{
+    justify-content: space-between;
+    gap: 16px;
+}
