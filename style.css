@@ -8,9 +8,10 @@
 
 /* GENERAL */
 .container{
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1170px;
+  width: 80%;
+  margin: 0px auto;
+
 }
 
 .description{
@@ -30,6 +31,9 @@ h4{
     color: red;
     font-size: 14px;
 }
+.flex{
+    display: flex;
+}
 /*HEADER */
 
 header{
@@ -37,7 +41,6 @@ header{
     background-color: #FF6900;
     position: fixed;
     width: 100%;
-    margin-top: -40px;
     z-index: 2;
 
 }
@@ -88,39 +91,81 @@ i{
 }
 
 /* MAIN */
-
-img{
-    max-width: 100%;
-    max-height: 100%;
+main{
+    padding-top: 48px;
 }
-.colmn{
-    width: calc(100% / 3);
-    display: relative;
 
-    
+.container > .row{
+    justify-content: space-between;
+    padding: 48px 0;
+}
+
+.colmn > img{
+    width: 100%;
+}
+
+.colmn:hover .img-one{
+    display: none;
+}
+
+.img-two{
+    display: none;
+}
+
+.last-img{
+    max-width: 375px;
+}
+
+.colmn:hover .img-two{
+    display: inline;
+}
+
+.colmn{
+    width: calc(100% / 3 - 16px);
+    position: relative;
+
 }
 .row{
     margin: 40px 0;
     display: flex;
     gap: 5px;
 }
-.last-img{
-    max-width: 397px;
-}
 
 .discount{
     background-color: red;
-    position: absolute;
-    padding: 6px 15px;
-    color: white;
-    bottom: 170px;
+    padding: 3px 6px;
+  
 }
 
 .sost{
     background-color: green;
+    padding: 3px 6px;
+    
+    
+}
+.square{
+        width: 48px;
+        height: 48px;
+        background-color: white;
+        position: absolute;
+        right: 0;
+        top: 10px;
+        justify-content: center;
+        align-items: center;
+}
+
+.square > div{
+    font-size: 24px;
+}
+
+.square:hover{
+    color: red;
+}
+
+.labels{
+    color: white;
+    font-size: 13px;
     position: absolute;
-    padding: 6px 15px;
-    color:white;
-    bottom: 170px;
-    left: 220px;
+    left: 0;
+    bottom: 98px;
 }
